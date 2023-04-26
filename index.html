@@ -5,15 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Basic iframe embed</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+      /* normalize css snippet */
+      body {
+        margin: 0;
+      }
+    </style>
   </head>
   <body>
 
     <iframe
         title="100ms-app"
         allow="camera *;microphone *;display-capture *"
-        src="https://<template-subdomain>.app.100ms.live/preview/<short-code>"
-        style="height: 900px; width: 900px;">
+        src="https://<template-subdomain>/preview/<short-code>"
+        style="height: 100vh; width: 100%; border:0;">
     </iframe>
 
 	<script src="index.js"></script>
